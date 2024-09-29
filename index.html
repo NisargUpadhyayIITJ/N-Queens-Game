@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Queens WebAssembly</title>
+</head>
+<body>
+    <h1>N-Queens Problem Solver</h1>
+    <input type="number" id="nValue" placeholder="Enter N value" min="1" />
+    <button onclick="solveNQueens()">Solve</button>
+
+    <h2>Result</h2>
+    <pre id="output"></pre>
+
+    <script src="a.out.js"></script>
+    <script>
+        function solveNQueens() {
+            var res = Module.ccall(
+                    "main",
+                    "number",
+                    null,
+                    null
+                );
+            console.log(res);
+            // Get the N value from the input field
+            let n = document.getElementById('nValue').value;
+            console.log(n);
+            
+            // Make sure it's a valid number
+            if (n <= 0 || isNaN(n)) {
+                alert("Please enter a valid number greater than 0");
+                return;
+            }
+
+            // Call the C++ function solveNQueens from JavaScript using ccall
+           
+                // ccall the solveNQueens function and pass the user input
+                let result = Module.ccall(
+                    'solveNQueens',  // name of the C++ function
+                    'string',        // return type
+                    ['number'],      // argument types
+                    [n]    // arguments (convert to integer)
+                );
+                console.log(result);
+                
+                // Display the result in the output area
+                document.getElementById('output').innerText = result;
+          
+            
+        }
+    </script>
+</body>
+</html>
