@@ -68,6 +68,8 @@ void solve(int col,vector<string> &board,vector<vector<string>> &ans,int n){
         // printBoard(board,n);
     
 }
+
+// Main function to solve the N-Queens problem
 extern "C"{
 EMSCRIPTEN_KEEPALIVE
 const char* solveNQueens(int n) {
@@ -76,6 +78,7 @@ const char* solveNQueens(int n) {
 
     solve(0,board,ans,n);
 
+    // Convert the answer to a string format
     string res="";
     
     for (int i = 0; i < ans.size(); i++) {
@@ -91,6 +94,7 @@ const char* solveNQueens(int n) {
 }
 }
 
+// Main function for testing
 EMSCRIPTEN_KEEPALIVE
 int main() {
   int n = 4;
