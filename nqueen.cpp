@@ -62,7 +62,7 @@ void solve(int col,vector<string> &board,vector<vector<string>> &ans,int n){
         if(isSafe(row,col,board,n)){
             board[row][col]='Q'; // Place the queen
             solve(col+1,board,ans,n); // Recur for the next column
-            board[row][col]='.';
+            board[row][col]='.'; // Backtrack
         }
     }
         // printBoard(board,n);
