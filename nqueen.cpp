@@ -3,7 +3,6 @@
 #include <string>
 #include <emscripten.h>
 
-
 using namespace std;
 
 EMSCRIPTEN_KEEPALIVE
