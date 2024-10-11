@@ -1,6 +1,6 @@
 # N-Queens Visualizer Project
 
-This project is a visualizer for the N-Queens problem. It allows users to see all possible solutions for the N-Queens problem on an `n x n` chessboard.
+This project is a visualizer for the N-Queens problem. It allows users to visaulize all possible solutions for the N-Queens problem on an `n x n` chessboard.
 
 ## How to Run the Project
 
