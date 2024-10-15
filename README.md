@@ -1,6 +1,7 @@
 # N-Queens Visualizer Project
 
 This project is a visualizer for the N-Queens problem. It allows users to visualize all possible solutions for the N-Queens problem on an `n x n` chessboard.
+The site is live:-  [N-Queens Game](https://abhyudayatiwari.github.io/N-Queens-Game/index.html)
 
 ## How to Run the Project
 
