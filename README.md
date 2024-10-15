@@ -33,5 +33,10 @@ This project visualizes all the possible solutions of the N-Queens problem for d
 - **Visualizer**: See all possible valid arrangements of queens on the board.
 - **Speed Control**: Adjust the speed of the visualization using the slider.
 
+### Technology Used
+
+- **C++ with Emscripten**: The core logic for solving the N-Queens problem is implemented in C++. Emscripten is used to compile the C++ code into WebAssembly, enabling it to run in the browser.
+- **JavaScript**: JavaScript is utilized to connect the WebAssembly code with the visualization and user interface.
 
 ### Enjoy solving the N-Queens problem visually! 🎮
+
