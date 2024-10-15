@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #bdbbbb;
+}
+.logo-text {
+    font-family: 'Impact', sans-serif; /* Impact is a close approximation */
+    font-weight: bold;
+    font-size: 60px; /* Adjust based on your needs */
+    color: #FFCC00; /* Yellow text color */
+    text-shadow: 
+      -1px -1px 0 #FF0000, /* Red shadow */
+      1px -1px 0 #FF0000,
+      -1px 1px 0 #FF0000,
+      1px 1px 0 #FF0000,
+      3px 3px 0 #FF0000; /* Further red shadow for a thicker outline */
+      text-align: center;
+  }
+.input-box{
+    text-align: center;
+}
+.box{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCC00;
+    border-style: solid;
+  border-width: 1px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+}
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: #FF0000;
+}
+.table-heading{
+    
+    background-color: #011627;
+    color: #fdfffc;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+.main-heading{
+    background-color: #011627;
+    color: #fdfffc;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#nValue{
+    width: 50px;
+}
