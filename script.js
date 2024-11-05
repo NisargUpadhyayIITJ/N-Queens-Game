@@ -11,7 +11,7 @@ const queenfont = '<i class="fas fa-chess-queen" style="color:#000"></i>';
 
 function getNvalue(){
 
-    n=  document.getElementById('nValue').value;
+    n = document.getElementById('nValue').value;
     console.log(n);
     
    if(n>10){
@@ -36,7 +36,7 @@ function solveNQueens() {
             'solveNQueens',  // name of the C++ function
             'string',        // return type
             ['number'],      // argument types
-            [n]    // arguments (convert to integer)
+            [n]              // arguments (convert to integer)
         );
        
        
@@ -76,7 +76,7 @@ function generateSolution(encodedString) {
             heading.innerText=arr+1;
             heading.classList.add("table-heading")
             sol.appendChild(heading)
-            lines.forEach((line ,j)=> { // Iterate through each line
+            lines.forEach((line ,j)=> {                 // Iterate through each line
                 let row=document.createElement('div')
                 sol.appendChild(row);
                 row.classList.add('flex')
@@ -86,7 +86,7 @@ function generateSolution(encodedString) {
                     if (line[pawn] === '.') {
                         let box = document.createElement('div');
                         box.classList.add('box');
-                        box.innerText = "-"; // Correct way to set innerText
+                        box.innerText = "-";            // Correct way to set innerText
                         row.appendChild(box);
                         if((pawn+j)%2==0){
                             box.style.backgroundColor='#FF9F1C'
@@ -95,13 +95,13 @@ function generateSolution(encodedString) {
                     else{
                         let box = document.createElement('div');
                         box.classList.add('box');
-                        box.innerHTML = queenfont; // Correct way to set innerText
+                        box.innerHTML = queenfont;      // Correct way to set innerText
                         row.appendChild(box);
                         if((pawn+j)%2==0){
                             box.style.backgroundColor='#FF9F1C'
                         }
                     }
-                    // Add code for 'Q' if needed (for Queen placement)
+                    // Add code for 'Q' if needed (for queen placement and interactive gaming experience)
                 }
             });
         });
